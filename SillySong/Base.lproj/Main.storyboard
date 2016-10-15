@@ -8,7 +8,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SillySong" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -18,55 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="T3f-lw-QxS">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="T3f-lw-QxS">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="q8c-0p-lOY">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q8c-0p-lOY">
+                                        <rect key="frame" x="218" y="0.0" width="164" height="150"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDv-KS-8o1">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="96"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDv-KS-8o1">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="150"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="96" id="0y4-Eh-uIS"/>
-                                                    <constraint firstAttribute="width" constant="249" id="6oq-aB-ejI"/>
+                                                    <constraint firstAttribute="height" constant="150" id="0y4-Eh-uIS"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="40"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="6oq-aB-ejI"/>
-                                                    </mask>
-                                                </variation>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="8aY-tQ-Beh">
-                                        <rect key="frame" x="0.0" y="136" width="600" height="444"/>
+                                        <rect key="frame" x="167" y="175" width="266" height="405"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uwf-uG-CBa">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="46"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uwf-uG-CBa">
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="66"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgD-U4-H4D">
-                                                        <rect key="frame" x="237" y="8" width="127" height="30"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="hgD-U4-H4D">
+                                                        <rect key="frame" x="8" y="8" width="250" height="50"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="mAu-vB-YGF"/>
+                                                            <constraint firstAttribute="width" constant="250" id="mAu-vB-YGF"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                        <connections>
+                                                            <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LHU-Td-jGg"/>
+                                                            <action selector="fieldReset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="qXq-qv-OB1"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="frY-bs-rL4">
-                                                <rect key="frame" x="0.0" y="71" width="600" height="373"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="frY-bs-rL4">
+                                                <rect key="frame" x="0.0" y="91" width="266" height="314"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="IBc-er-tsE">
-                                                        <rect key="frame" x="8" y="8" width="584" height="357"/>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IBc-er-tsE">
+                                                        <rect key="frame" x="8" y="8" width="250" height="298"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -85,7 +83,12 @@
                             <constraint firstAttribute="trailing" secondItem="T3f-lw-QxS" secondAttribute="trailing" id="pBX-XY-0Vz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="IBc-er-tsE" id="Exp-D7-nXm"/>
+                        <outlet property="nameField" destination="hgD-U4-H4D" id="VUs-sP-K5X"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
